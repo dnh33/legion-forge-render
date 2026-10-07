@@ -1,6 +1,6 @@
 # legion-forge-render
 
-A free, public image pipeline for the art in [Legion](https://github.com/dnh33/legion)'s War Room: painted reliquary busts for the 13 offices and the hero backdrops ("vistas") for every theme and Depth.
+A free, public image pipeline for the art in [Legion](https://github.com/dnh33/legion)'s War Room: painted half-length portraits of the 13 offices and the hero backdrops ("vistas") for every theme and Depth.
 
 - **Model:** FLUX.1-schnell by Black Forest Labs, Apache-2.0, as a Q4_K_S GGUF ([city96](https://huggingface.co/city96/FLUX.1-schnell-gguf)).
 - **Runtime:** [stable-diffusion.cpp](https://github.com/leejet/stable-diffusion.cpp) (MIT), CPU only, on GitHub-hosted runners (free for public repositories).
@@ -17,4 +17,4 @@ Actions → *Render reliquaries and vistas* → Run workflow. Choose a set, opti
 
 ## Rules for the art
 
-Original designs only. No franchise marks: no double-headed birds, no skulls, no wings, no gear or cog emblems, no faces. Busts are a helm, a gorget and an open ring halo, with nothing below the collar.
+Grimdark, sincere and maximal, in original designs. Genre tropes are in: hooded machine-acolytes, robes over augmetics, glowing optics, mechanical arms, wax seals, censers, skulls as memento mori, forge-cathedrals. Other people's marks are out: no two-headed birds or eagles, no skull-in-a-cog emblem, no floating skull drones, no power-armour soldiers or pauldrons, no franchise names or text.

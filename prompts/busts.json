@@ -1,18 +1,57 @@
 {
- "style": "Dark museum oil painting, a single reliquary bust on a plinth of shadow: an empty armoured helm with no face, a high gorget collar and a thin open bronze ring halo behind it with a gap at the top right; nothing below the collar. Materials: blackened iron, worn bronze, verdigris, oil-black lacquer, bone-white enamel, rust. One narrow slit of light in the visor. Single warm light from the upper left, deep chiaroscuro, soft candle-warm rim light, dark umber background fading to black. Painterly brushwork, gouache and oil texture, Rembrandt lighting, sombre, reverent, grimdark gothic industrial. No text, no letters, no logos, no skulls, no wings, no birds, no gears, no cogs, no face.",
+ "style": "Grimdark gothic sci-fi oil painting, half-length portrait of a hooded machine-acolyte of a fanatical machine priesthood, centred, facing the viewer, from the waist up. Heavy ash-black and oxblood vestments with bone-white trim, frayed hems, layered over blackened iron and worn bronze augmetics. Where the face should be: a shadowed hood holding an iron or brass mask with glowing optic lenses, cables and ribbed tubes jacked into the hood, segmented mechanical tendril-arms rising behind the shoulders, wax seals with long parchment strips pinned to the chest, small bone memento mori skulls and reliquary charms on chains, a candle or censer smoke curling up. An open bronze ring with a gap at the top right hangs behind the head like a halo. Painterly brushwork, heavy chiaroscuro, single warm key light from the upper left, deep smoky background fading to black, incense haze, sombre, sincere, devotional, monumental. Original design. No text, no letters, no logos, no birds, no eagles, no wings, no emblem of a skull inside a cog, no floating skulls, no shoulder pauldrons, no power armour.",
  "items": {
-  "marshal":    {"seed": 1101, "line": "The Marshal, lead of the order: a tall crested great helm with a crimson horsehair plume, a slit of green light, a short command standard pole rising behind the shoulder, a sash of tally ribbons on the gorget."},
-  "builder":    {"seed": 1102, "line": "The Builder: a squat mason's helm with a riveted brow ridge, a bronze set-square and a hanging plumb-bob on a line fixed to the gorget, stone dust in the seams, a slit of green light."},
-  "scout":      {"seed": 1103, "line": "The Scout: a narrow hooded helm with a long horizontal visor slit of pale light, a small caged lantern hanging at the collar, a rolled map case strapped across the gorget."},
-  "inquisitor": {"seed": 1104, "line": "The Inquisitor, the doubter of code: a severe high-collared helm with a single brass magnifying lens over one eye-slit, a red wax seal pressed into the gorget, a cold blue-white slit of light, stern."},
-  "scribe":     {"seed": 1105, "line": "The Scribe: a rounded cowled helm, a quill tucked in a bronze clasp, ink-stained bone enamel on the gorget, a ribbon of vellum hanging, a soft green slit of light."},
-  "archivist":  {"seed": 1106, "line": "The Archivist: a heavy helm hung with fine chains that end in small book clasps and brass index tabs, a reading lamp hood over the visor slit, dusty."},
-  "sentinel":   {"seed": 1107, "line": "The Sentinel: a tall tower-crested helm like a watchtower top, a small round shield bolted to the gorget, a vigilant red-amber slit of light."},
-  "forgemaster":{"seed": 1108, "line": "The Forgemaster, keeper of the kilns: a soot-blackened helm with heat-blued edges, smith's tongs crossed at the gorget, orange kiln glow reflecting from below, a thin wisp of smoke."},
-  "exorcist":   {"seed": 1109, "line": "The Exorcist, hunter of faults: a hooded helm with a swinging brass censer trailing grey smoke, a pale moth pinned under glass at the gorget, a cold green slit of light."},
-  "preceptor":  {"seed": 1110, "line": "The Preceptor, the teacher: a calm domed helm, a slender pointer rod resting across the gorget, a small reading lectern plate on the collar, a warm amber slit of light."},
-  "herald":     {"seed": 1111, "line": "The Herald: a helm with a flared mouth-grille like a horn bell, a long bronze horn slung across the gorget, a short hanging banner, a bright slit of light."},
-  "assayer":    {"seed": 1112, "line": "The Assayer: a precise helm with a jeweller's loupe, a tiny bronze balance scale hanging from the gorget with a single gold coin in one pan, a gold slit of light."},
-  "sculptor":   {"seed": 1113, "line": "The Sculptor: a helm with a smooth unfinished clay-grey faceplate half carved, a chisel and wooden mallet strapped to the gorget, clay dust, a warm slit of light."}
+  "marshal": {
+   "seed": 1101,
+   "line": "The Marshal, supreme commander of the order: tallest and most ornate, a crested iron helm-mask under the hood with a single slit of green light, a crimson horsehair plume, a tall command standard with hanging tally ribbons held in a mechanical hand, a heavy mantle of oxblood with bone trim, rank chains across the chest."
+  },
+  "builder": {
+   "seed": 1102,
+   "line": "The Builder: broad-shouldered, a riveted mason's mask with two green optics, a heavy bronze set-square and a plumb-bob on a chain, stone dust in the folds, one massive mechanical arm ending in a trowel and a hammer."
+  },
+  "scout": {
+   "seed": 1103,
+   "line": "The Scout: lean, a long hood with a narrow horizontal visor slit of pale light and a cluster of small telescopic lenses, a caged lantern on a pole, a rolled map case and a brass compass hanging on chains."
+  },
+  "inquisitor": {
+   "seed": 1104,
+   "line": "The Inquisitor, the doubter of all work: severe, very high collar, one huge brass magnifying lens over one optic, a cold blue-white glare, an iron rod of judgement, red wax seals of rejection pinned all over the chest, menacing and incorruptible."
+  },
+  "scribe": {
+   "seed": 1105,
+   "line": "The Scribe: a cowled mask with soft green optics, three mechanical arms each holding a quill over a floating unrolled scroll, ink-stained bone trim, inkwells on chains, scraps of vellum everywhere."
+  },
+  "archivist": {
+   "seed": 1106,
+   "line": "The Archivist: bent under the weight of chained books hanging from the shoulders, brass index tabs, a reading lamp hood over the optics, keys on rings, dust motes."
+  },
+  "sentinel": {
+   "seed": 1107,
+   "line": "The Sentinel: a tall tower-crested mask with a single red-amber optic, a heavy round shield and a long halberd, a lantern of warning, armoured robe, vigilant stance."
+  },
+  "forgemaster": {
+   "seed": 1108,
+   "line": "The Forgemaster, keeper of the kilns: soot-blackened, heat-blued iron mask with two furnace-orange optics, smith's tongs held by a mechanical arm, a glowing ingot, sparks and smoke, the robe hem singed, orange kiln light from below."
+  },
+  "exorcist": {
+   "seed": 1109,
+   "line": "The Exorcist, hunter of faults: a gaunt hooded mask with cold green optics, swinging a brass censer of grey smoke, a pale moth pinned under a glass dome on the chest, bone charms, ritual chains."
+  },
+  "preceptor": {
+   "seed": 1110,
+   "line": "The Preceptor, the teacher: calm and dignified, a domed mask with warm amber optics, a long pointer rod, a small lectern plate with an open book on the chest, a ring of students' candles."
+  },
+  "herald": {
+   "seed": 1111,
+   "line": "The Herald: a mask with a flared horn-bell vox grille for a mouth, a long bronze war horn, a hanging banner with abstract woven script, loudspeaker cones on the shoulders."
+  },
+  "assayer": {
+   "seed": 1112,
+   "line": "The Assayer: a precise mask with a jeweller's loupe optic, a bronze balance scale held by a mechanical arm with a single gold coin in one pan, ledger chains, a gold optic glow."
+  },
+  "sculptor": {
+   "seed": 1113,
+   "line": "The Sculptor: a half-carved clay-grey mask, chisel and mallet in mechanical hands, a small unfinished statue of a hooded figure held up, clay dust on dark robes."
+  }
  }
 }

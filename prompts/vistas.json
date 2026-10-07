@@ -1,26 +1,93 @@
 {
- "style": "Wide cinematic matte painting, establishing shot, gothic industrial sci-fi, colossal scale, tiny distant figures for scale, layered atmospheric depth with haze between layers, dramatic volumetric light shafts, painterly concept art, sombre grimdark mood. Composition for a website header: the upper left third is calm dark sky or vault ceiling with little detail, the lower quarter is a dark empty floor in deep shadow, the main structures stand in the middle distance. No text, no letters, no logos, no skulls, no wings, no birds, no gears, no cogs, no faces.",
+ "style": "Grimdark gothic sci-fi matte painting, wide cinematic establishing shot, colossal scale with tiny hooded robed figures for scale, sincere and monumental, layered atmospheric haze, volumetric light shafts, incense smoke, painterly concept art. Composition for a website header: the upper left third is calm dark vault or sky with little detail, the lower quarter is dark floor in deep shadow, the main structures stand in the middle distance. Original design. No text, no letters, no logos, no birds, no eagles, no wings, no emblem of a skull inside a cog, no floating skulls, no armoured space soldiers.",
  "items": {
-  "foundry-0":  {"seed": 2101, "line": "The Yard of the Kiln: an immense cathedral-like foundry hall, rows of tall arched kiln mouths each with one vertical slit of orange light, iron buttresses and riveted ducts, hanging chains, calm working lamps, warm amber haze, clinker floor, orderly and quiet."},
-  "foundry-1":  {"seed": 2102, "line": "The Rite of the Kiln: the same immense foundry hall now lit for ritual, every kiln mouth burning, long tally marks in fives chalked on the stone piers, heavy bronze censers swinging and pouring smoke, drifting embers, deep orange and black."},
-  "foundry-2":  {"seed": 2103, "line": "The Undercroft beneath the Kiln: a vast vaulted undercroft of enormous rusted pipes descending into darkness, heat haze, steam vents, red glow welling up from below the floor grates, oppressive and claustrophobic despite the scale."},
-  "foundry-3":  {"seed": 2104, "line": "The Closed Flue: a monolithic sealed flue rising into darkness with no opening at the top, the walls cracked and glowing red hot, a firestorm of embers swirling inside the hall, one blinding vertical slit of light in a giant arch, overwhelming dread."},
-  "lattice-0":  {"seed": 2201, "line": "The Reading Room of the Loom: a vast gothic nave of brass and verdigris looms, thousands of fine pale green threads strung from floor to the ribbed vault like harp strings, quiet reading lamps, cool blue-green dusk light, serene."},
-  "lattice-1":  {"seed": 2202, "line": "The Weaving: the great looms in motion, shuttles flying, threads of green light weaving across the nave into enormous hanging cloths, faint tally patterns woven into the cloth, motes of light, ceremonial."},
-  "lattice-2":  {"seed": 2203, "line": "The Counting: endless ledgers and hanging cloths of corrections filling the nave, threads cut and knotted, dim green light, heavy shadows between the looms, a sense of something being hidden."},
-  "lattice-3":  {"seed": 2204, "line": "The Held Breath: every thread in the nave drawn taut to snapping, the looms frozen, darkness closing in, one single green slit of light in the far wall, tense and silent."},
-  "crypt-0":    {"seed": 2301, "line": "The reading floor of the Vault: a deep candlelit archive, towering shelves of bound records and sealed drawers, brass catalogue rails, warm candle pools, dust in the air, calm."},
-  "crypt-1":    {"seed": 2302, "line": "The lower stacks of the Vault: shelves rising out of sight, ladders on brass rails, wax-sealed reliquary drawers, candles guttering, deeper shadows, vellum hanging from cords."},
-  "crypt-2":    {"seed": 2303, "line": "The sealed galleries of the Vault: long galleries behind iron grilles, chained record chests, dripping wax, cold stone, a single row of candles leading away into blackness."},
-  "crypt-3":    {"seed": 2304, "line": "The deepest Vault: a vast round chamber of sealed iron doors stacked to the ceiling, almost no light, one candle, the oppressive weight of everything kept, dread."},
-  "warfront-0": {"seed": 2401, "line": "The line at dawn: a fortified trench line of gothic concrete bunkers and iron palisades across a grey wasteland, distant cathedral-spired city on the horizon, cold blue morning haze, searchlights idle, quiet before battle."},
-  "warfront-1": {"seed": 2402, "line": "The line under artillery haze: the same trench line with smoke columns rising, distant flashes on the horizon, searchlights sweeping a cold teal sky, ash drifting like snow."},
-  "warfront-2": {"seed": 2403, "line": "The line burning: the distant spired city in flames, fires along the trenches, colossal silhouettes of siege machines in the smoke, orange fire against cold steel blue, ash storm."},
-  "warfront-3": {"seed": 2404, "line": "The line at the end: a black storm over a shattered trench line, lightning, the spired city a burning ruin, searchlights broken, everything lit by fire and lightning, apocalyptic."},
-  "siege-0":    {"seed": 2501, "line": "The Citadel wall in cold daylight: towering pale marble ramparts and gothic bastions, giant bronze statues of hooded armoured guardians holding spears, long banners hanging still, pale overcast sky, clean, solemn, high key light palette."},
-  "siege-1":    {"seed": 2502, "line": "The Citadel wall mustering: the pale marble ramparts lined with banners in wind, braziers lit on the bastions, thin smoke, pale grey sky, solemn, high key light palette."},
-  "siege-2":    {"seed": 2503, "line": "The Citadel wall under siege: pale marble ramparts scarred and chipped, smoke drifting across the bastions, the bronze guardian statues cracked, grey sky with falling ash, still light-toned overall."},
-  "siege-3":    {"seed": 2504, "line": "The Citadel wall breached: a great breach in the pale marble ramparts, a bronze guardian statue fallen, fire and smoke against a pale white-grey sky, dust storm, still high key and pale overall."},
-  "plain-0":    {"seed": 2601, "line": "Minimal calm landscape of soft grey fog over distant faint gothic spires, almost monochrome, very quiet, lots of empty space, high key."}
+  "foundry-0": {
+   "seed": 2101,
+   "line": "The Yard of the Kiln: an immense forge-cathedral nave, rows of towering arched kiln mouths each with one vertical slit of orange fire, iron buttresses, colossal statues of hooded machine-saints holding hammers between the arches, ranks of small robed acolytes at work, chains and ducts, warm amber haze."
+  },
+  "foundry-1": {
+   "seed": 2102,
+   "line": "The Rite of the Kiln: the forge-cathedral lit for liturgy, every kiln roaring, long tally marks in fives carved into the pillars, giant bronze censers swinging and pouring smoke, processions of hooded acolytes with candles, embers raining, banners of oxblood cloth."
+  },
+  "foundry-2": {
+   "seed": 2103,
+   "line": "The Undercroft beneath the Kiln: a vast ossuary undercroft, the walls built of countless bone skulls and rusted pipes descending into red darkness, robed figures wired into machines along the walls, steam and heat haze, red glow welling from grates."
+  },
+  "foundry-3": {
+   "seed": 2104,
+   "line": "The Closed Flue: a monolithic sealed flue rising into darkness with no opening, cracked walls glowing red hot, a storm of embers, hundreds of kneeling robed acolytes before a single blinding vertical slit of light in a giant arch, a colossal hooded statue looming above, overwhelming dread."
+  },
+  "lattice-0": {
+   "seed": 2201,
+   "line": "The Reading Room of the Loom: a vast gothic scriptorium nave of brass and verdigris looms, thousands of fine green glowing threads strung from floor to the ribbed vault, hooded scribes at lecterns, reading lamps, cool green dusk."
+  },
+  "lattice-1": {
+   "seed": 2202,
+   "line": "The Weaving: the great looms in motion, threads of green light woven into enormous hanging cloths covered in abstract glyphs, rows of robed weavers with mechanical arms, candle motes, ceremonial."
+  },
+  "lattice-2": {
+   "seed": 2203,
+   "line": "The Counting: endless hanging cloths of corrections and towering ledgers, threads cut and knotted, skull-lined niches between the looms, dim green light, robed counters bent over tallies, something hidden."
+  },
+  "lattice-3": {
+   "seed": 2204,
+   "line": "The Held Breath: every thread in the nave drawn taut to snapping, the weavers frozen kneeling, darkness closing in, a single green slit of light in the far wall, tense and silent."
+  },
+  "crypt-0": {
+   "seed": 2301,
+   "line": "The reading floor of the Vault: a deep candlelit archive cathedral, towering shelves of bound records and sealed reliquary drawers, brass catalogue rails, hooded archivists on ladders, warm candle pools, dust."
+  },
+  "crypt-1": {
+   "seed": 2302,
+   "line": "The lower stacks of the Vault: shelves rising out of sight, wax-sealed drawers with parchment strips, ossuary niches with skulls between the shelves, candles guttering, deeper shadows."
+  },
+  "crypt-2": {
+   "seed": 2303,
+   "line": "The sealed galleries of the Vault: long galleries behind iron grilles, chained record chests, walls of bone, dripping wax, a single row of candles leading into blackness, a robed keeper with a lantern."
+  },
+  "crypt-3": {
+   "seed": 2304,
+   "line": "The deepest Vault: a vast round chamber of sealed iron doors stacked to the ceiling, a colossal hooded statue with its hands over its mask, almost no light, one candle, dread."
+  },
+  "warfront-0": {
+   "seed": 2401,
+   "line": "The line at dawn: a fortified trench line of gothic bunkers and iron palisades across a grey wasteland, a cathedral-spired hive city on the horizon belching smog, cold blue haze, hooded sentries with lanterns, quiet before battle."
+  },
+  "warfront-1": {
+   "seed": 2402,
+   "line": "The line under artillery: smoke columns rising, distant flashes, searchlights sweeping a cold teal sky, ash falling like snow, banners of oxblood on poles, robed figures carrying censers along the trench."
+  },
+  "warfront-2": {
+   "seed": 2403,
+   "line": "The line burning: the spired city in flames on the horizon, colossal walking siege engines shaped like gothic cathedrals striding through smoke, fire along the trenches, orange fire against steel blue."
+  },
+  "warfront-3": {
+   "seed": 2404,
+   "line": "The line at the end: a black storm over a shattered trench line, lightning, the spired city a burning ruin, a colossal hooded statue toppled, everything lit by fire and lightning, apocalyptic."
+  },
+  "siege-0": {
+   "seed": 2501,
+   "line": "The Citadel wall in cold daylight: towering pale marble ramparts and gothic bastions, giant bronze statues of hooded robed guardians with halberds, long banners hanging still, pale overcast sky, solemn, high-key light palette."
+  },
+  "siege-1": {
+   "seed": 2502,
+   "line": "The Citadel mustering: pale marble ramparts lined with banners in wind, braziers lit, ranks of tiny robed defenders, thin smoke, pale grey sky, high-key light palette."
+  },
+  "siege-2": {
+   "seed": 2503,
+   "line": "The Citadel under siege: pale marble ramparts scarred and chipped, smoke across the bastions, a bronze guardian statue cracked, ash falling from a pale sky, still light-toned overall."
+  },
+  "siege-3": {
+   "seed": 2504,
+   "line": "The Citadel breached: a great breach in the pale marble ramparts, a bronze guardian statue fallen, fire and smoke against a white-grey sky, dust storm, still high-key and pale overall."
+  },
+  "plain-0": {
+   "seed": 2601,
+   "line": "Minimal calm landscape of soft grey fog over faint distant gothic spires, almost monochrome, very quiet, lots of empty space, high key."
+  },
+  "nave-0": {
+   "seed": 2701,
+   "line": "The Command Nave: a colossal gothic command chamber, rows of hooded machine-acolytes at lectern-consoles tending glowing green cables that all run up to one empty high throne-like dais of iron in the centre, pipe-organ exhaust stacks, hanging banners, skull niches, incense haze."
+  }
  }
 }
