@@ -6,7 +6,7 @@ on:
     inputs:
       set:      {description: "busts, vistas or all", default: "all", type: choice, options: [all, busts, vistas]}
       only:     {description: "Comma-separated ids (e.g. marshal,foundry-3). Empty = every item in the set", default: "", type: string}
-      variants: {description: "Seeds per item", default: "2", type: string}
+      variants: {description: "Seeds per item", default: "1", type: string}
       steps:    {description: "Sampling steps (schnell is made for 4)", default: "4", type: string}
       shards:   {description: "Parallel jobs (each downloads the models once)", default: "12", type: string}
       runner:   {description: "Runner image. macOS arm64 runners have no GPU access in the VM and 7 GB RAM: slow and experimental", default: "ubuntu-latest", type: choice, options: [ubuntu-latest, macos-15, macos-14]}
