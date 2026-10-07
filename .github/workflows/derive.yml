@@ -11,21 +11,31 @@ permissions:
 concurrency: {group: derive, cancel-in-progress: false}
 jobs:
   derive:
+    # skip cancelled render runs, and runs before the renders branch exists
+    if: github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success' || github.event.workflow_run.conclusion == 'failure'
     runs-on: ubuntu-latest
     timeout-minutes: 120
     steps:
       - uses: actions/checkout@v7
         with: {path: main}
+      - name: Renders branch exists?
+        id: rb
+        run: |
+          if git ls-remote --exit-code --heads "https://github.com/${{ github.repository }}" renders >/dev/null; then echo "ok=1" >> "$GITHUB_OUTPUT"; else echo "No renders branch yet"; echo "ok=0" >> "$GITHUB_OUTPUT"; fi
       - uses: actions/checkout@v7
+        if: steps.rb.outputs.ok == '1'
         with: {ref: renders, path: out}
       - name: Tools (CPU)
+        if: steps.rb.outputs.ok == '1'
         run: |
           python3 -m pip install --quiet --break-system-packages torch --index-url https://download.pytorch.org/whl/cpu
           python3 -m pip install --quiet --break-system-packages "rembg[cpu]" transformers pillow numpy
       - name: Derive
+        if: steps.rb.outputs.ok == '1'
         working-directory: out
         run: python3 ../main/scripts/derive.py renders
       - name: Commit
+        if: steps.rb.outputs.ok == '1'
         working-directory: out
         run: |
           git config user.name "render-bot"; git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
