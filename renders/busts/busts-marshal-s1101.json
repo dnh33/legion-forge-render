@@ -1,0 +1,14 @@
+{
+ "kind": "busts",
+ "id": "marshal",
+ "seed": 1101,
+ "steps": 4,
+ "size": [
+  768,
+  1024
+ ],
+ "seconds": 2767,
+ "prompt": "The Marshal, lead of the order: a tall crested great helm with a crimson horsehair plume, a slit of green light, a short command standard pole rising behind the shoulder, a sash of tally ribbons on the gorget. Dark museum oil painting, a single reliquary bust on a plinth of shadow: an empty armoured helm with no face, a high gorget collar and a thin open bronze ring halo behind it with a gap at the top right; nothing below the collar. Materials: blackened iron, worn bronze, verdigris, oil-black lacquer, bone-white enamel, rust. One narrow slit of light in the visor. Single warm light from the upper left, deep chiaroscuro, soft candle-warm rim light, dark umber background fading to black. Painterly brushwork, gouache and oil texture, Rembrandt lighting, sombre, reverent, grimdark gothic industrial. No text, no letters, no logos, no skulls, no wings, no birds, no gears, no cogs, no face.",
+ "model": "FLUX.1-schnell Q4_K_S GGUF (Apache-2.0)",
+ "runner": "Linux/X64"
+}
