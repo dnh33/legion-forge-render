@@ -12,7 +12,7 @@ for it in ITEMS:
         seed = e["seed"] + v * 1000; name = f"out/{kind}-{key}-s{seed}"
         cmd = [SD, "--diffusion-model", f"{M}/flux.gguf", "--vae", f"{M}/ae.safetensors", "--clip_l", f"{M}/clip_l.safetensors",
                "--t5xxl", f"{M}/t5.gguf", "-p", prompt, "--cfg-scale", "1.0", "--sampling-method", "euler", "--steps", STEPS,
-               "-W", str(w), "-H", str(h), "--seed", str(seed), "--vae-tiling", "--diffusion-fa", "-o", name + ".png"]
+               "-W", str(w), "-H", str(h), "--seed", str(seed), "--diffusion-fa", "-o", name + ".png"]
         t = time.time(); print(f"::group::{kind}/{key} seed {seed} ({w}x{h})", flush=True)
         r = subprocess.run(cmd); dt = round(time.time() - t)
         print("::endgroup::", flush=True)
