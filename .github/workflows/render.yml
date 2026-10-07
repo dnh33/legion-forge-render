@@ -4,7 +4,7 @@ name: Render reliquaries and vistas
 on:
   workflow_dispatch:
     inputs:
-      set:      {description: "busts, vistas or all", default: "all", type: choice, options: [all, busts, vistas]}
+      set:      {description: "busts, vistas, frames (style exploration) or all", default: "all", type: choice, options: [all, busts, vistas, frames]}
       only:     {description: "Comma-separated ids (e.g. marshal,foundry-3). Empty = every item in the set", default: "", type: string}
       variants: {description: "Seeds per item", default: "1", type: string}
       steps:    {description: "Sampling steps (schnell is made for 4)", default: "4", type: string}
@@ -23,7 +23,7 @@ jobs:
     steps:
       - uses: actions/checkout@v7
       - id: p
-        env: {SET: "${{ inputs.set }}", ONLY: "${{ inputs.only }}", SHARDS: "${{ inputs.shards }}"}
+        env: {SET: "${{ inputs.set }}", ONLY: "${{ inputs.only }}", SHARDS: "${{ inputs.shards }}", VARIANTS: "${{ inputs.variants }}"}
         run: python3 scripts/plan.py
 
   render:
@@ -83,6 +83,7 @@ jobs:
           git config user.name "render-bot"; git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           if git ls-remote --exit-code --heads origin renders >/dev/null; then git checkout renders; else git checkout --orphan renders; git rm -rf --quiet . || true; fi
           mkdir -p renders/busts renders/vistas
-          for f in dl/*; do b=$(basename "$f"); case "$b" in busts-*) cp "$f" renders/busts/;; vistas-*) cp "$f" renders/vistas/;; esac; done
+          mkdir -p renders/frames
+          for f in dl/*; do b=$(basename "$f"); case "$b" in busts-*) cp "$f" renders/busts/;; vistas-*) cp "$f" renders/vistas/;; frames-*) cp "$f" renders/frames/;; esac; done
           python3 -m pip install --quiet --break-system-packages pillow && python3 /tmp/sheet.py
           git add renders && (git commit -m "Renders from run ${{ github.run_id }}" && git push origin renders) || echo "Nothing new"

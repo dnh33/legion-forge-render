@@ -13,7 +13,7 @@ depth = pipeline("depth-estimation", model="depth-anything/Depth-Anything-V2-Sma
 from rembg import remove, new_session
 seg = new_session("u2net")
 for f in todo:
-    im = Image.open(f).convert("RGB"); base = f[:-4]; bust = os.path.basename(f).startswith("busts-")
+    im = Image.open(f).convert("RGB"); base = f[:-4]; bust = os.path.basename(f).startswith(("busts-", "frames-"))
     d = depth(im)["depth"].resize(im.size, Image.BICUBIC)
     a = np.asarray(d).astype(np.float32); a = (a - a.min()) / max(1e-6, a.max() - a.min())
     Image.fromarray((a * 255).astype(np.uint8)).filter(ImageFilter.GaussianBlur(1.5)).save(base + ".depth.png")

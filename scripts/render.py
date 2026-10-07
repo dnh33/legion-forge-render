@@ -2,13 +2,13 @@
 import json, os, subprocess, sys, time
 ITEMS = [s for s in os.environ["ITEMS"].split(",") if s]
 VARIANTS = int(os.environ.get("VARIANTS", "2")); STEPS = os.environ.get("STEPS", "4")
-SIZE = {"busts": (768, 1024), "vistas": (1344, 576)}
+SIZE = {"busts": (768, 1024), "frames": (768, 1024), "vistas": (1344, 576)}
 SD = os.environ.get("SD_BIN", "./sd/sd-cli"); M = os.environ.get("MODELS", "models")
 os.makedirs("out", exist_ok=True)
 for it in ITEMS:
-    kind, key = it.split(":", 1); d = json.load(open(f"prompts/{kind}.json")); e = d["items"][key]
+    parts = it.split(":"); kind, key = parts[0], parts[1]; d = json.load(open(f"prompts/{kind}.json")); e = d["items"][key]
     prompt = e["line"] + " " + d["style"]; w, h = SIZE[kind]
-    for v in range(VARIANTS):
+    for v in ([int(parts[2])] if len(parts) > 2 else range(VARIANTS)):
         seed = e["seed"] + v * 1000; name = f"out/{kind}-{key}-s{seed}"
         cmd = [SD, "--diffusion-model", f"{M}/flux.gguf", "--vae", f"{M}/ae.safetensors", "--clip_l", f"{M}/clip_l.safetensors",
                "--t5xxl", f"{M}/t5.gguf", "-p", prompt, "--cfg-scale", "1.0", "--sampling-method", "euler", "--steps", STEPS,

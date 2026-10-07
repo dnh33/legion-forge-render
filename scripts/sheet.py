@@ -2,10 +2,10 @@
 import glob, json, os
 from PIL import Image, ImageDraw
 os.makedirs("renders/sheets", exist_ok=True)
-for kind, (tw, th) in {"busts": (192, 256), "vistas": (448, 192)}.items():
+for kind, (tw, th) in {"busts": (192, 256), "frames": (192, 256), "vistas": (448, 192)}.items():
     files = [f for f in sorted(glob.glob(f"renders/{kind}/*.png")) if os.path.basename(f).count(".") == 1]
     if not files: continue
-    cols = 6 if kind == "busts" else 3; rows = (len(files) + cols - 1) // cols
+    cols = 3 if kind == "vistas" else 6; rows = (len(files) + cols - 1) // cols
     sheet = Image.new("RGB", (cols * tw, rows * (th + 18)), (12, 12, 12)); dr = ImageDraw.Draw(sheet)
     for i, f in enumerate(files):
         im = Image.open(f).convert("RGB"); im.thumbnail((tw, th)); x, y = (i % cols) * tw, (i // cols) * (th + 18)
