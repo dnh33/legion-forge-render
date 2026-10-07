@@ -1,0 +1,14 @@
+{
+ "kind": "vistas",
+ "id": "siege-1",
+ "seed": 2502,
+ "steps": 4,
+ "size": [
+  1344,
+  576
+ ],
+ "seconds": 1069,
+ "prompt": "The Citadel mustering: pale marble ramparts lined with banners in wind, braziers lit, ranks of tiny robed defenders, thin smoke, pale grey sky, high-key light palette. Grimdark gothic sci-fi matte painting, wide cinematic establishing shot, colossal scale with tiny hooded robed figures for scale, sincere and monumental, layered atmospheric haze, volumetric light shafts, incense smoke, painterly concept art. Composition for a website header: the upper left third is calm dark vault or sky with little detail, the lower quarter is dark floor in deep shadow, the main structures stand in the middle distance. Original design. No text, no letters, no logos, no birds, no eagles, no wings, no emblem of a skull inside a cog, no floating skulls, no armoured space soldiers.",
+ "model": "FLUX.1-schnell Q4_K_S GGUF (Apache-2.0)",
+ "runner": "Linux/X64"
+}

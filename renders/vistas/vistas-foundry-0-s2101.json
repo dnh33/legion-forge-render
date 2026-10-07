@@ -1,0 +1,14 @@
+{
+ "kind": "vistas",
+ "id": "foundry-0",
+ "seed": 2101,
+ "steps": 4,
+ "size": [
+  1344,
+  576
+ ],
+ "seconds": 2075,
+ "prompt": "The Yard of the Kiln: an immense forge-cathedral nave, rows of towering arched kiln mouths each with one vertical slit of orange fire, iron buttresses, colossal statues of hooded machine-saints holding hammers between the arches, ranks of small robed acolytes at work, chains and ducts, warm amber haze. Grimdark gothic sci-fi matte painting, wide cinematic establishing shot, colossal scale with tiny hooded robed figures for scale, sincere and monumental, layered atmospheric haze, volumetric light shafts, incense smoke, painterly concept art. Composition for a website header: the upper left third is calm dark vault or sky with little detail, the lower quarter is dark floor in deep shadow, the main structures stand in the middle distance. Original design. No text, no letters, no logos, no birds, no eagles, no wings, no emblem of a skull inside a cog, no floating skulls, no armoured space soldiers.",
+ "model": "FLUX.1-schnell Q4_K_S GGUF (Apache-2.0)",
+ "runner": "Linux/X64"
+}
